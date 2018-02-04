@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { model, binding } from 'mota';
-import { todoList } from '../models';
 
 @model
 @binding

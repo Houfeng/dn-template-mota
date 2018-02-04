@@ -1,4 +1,4 @@
-import { newGuid, trim } from 'ntils';
+import { newGuid } from 'ntils';
 
 export default class TodoItem {
 
@@ -23,7 +23,7 @@ export default class TodoItem {
   }
 
   enterEditing = () => {
-    this._editing = true
+    this._editing = true;
   }
 
   exitEditing = () => {

@@ -53,7 +53,7 @@ class TodoApp extends Component {
           </a>
         </li>
       ))}
-    </ul>
+    </ul>;
   }
 
   renderFooter() {
