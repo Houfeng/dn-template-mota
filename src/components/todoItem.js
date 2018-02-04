@@ -12,6 +12,7 @@ export default class TodoItem extends Component {
   }
 
   render() {
+    window.todoItem = this;
     const { title, completed, editing } = this.model;
     const classNames = [
       completed ? 'completed' : '', editing ? 'editing' : ''
