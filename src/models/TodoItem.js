@@ -1,22 +1,16 @@
-import { newGuid } from 'ntils';
+import { newGuid, trim } from 'ntils';
 
 export default class TodoItem {
 
   id;
   title;
   completed = false;
+  _editing = false;
 
   get list() {
     return this.__list || [];
   }
 
-  /**
-   * 创建一个 TodoItem 实例
-   * @param {object} list 传入 list
-   * @param {string} title todo项的内容
-   * @param {boolean} completed 是否完成的状态
-   * @memberof TodoModel
-   */
   constructor(list, title, completed) {
     this.__list = list;
     this.id = newGuid();
@@ -24,19 +18,21 @@ export default class TodoItem {
     this.completed = completed;
   }
 
-  // 切换列表项的完成状态
-  toggle = () => {
-    this.completed = !this.completed;
+  get editing() {
+    return !this.completed && this._editing;
   }
 
-  // 根据id删除列表项
+  enterEditing = () => {
+    this._editing = true
+  }
+
+  exitEditing = () => {
+    this._editing = false;
+  }
+
   delete = () => {
-    this.list.items = this.list.items.filter(todo => todo.id !== this.id);
-  }
-
-  // 设置实例title
-  setTitle = (title) => {
-    this.title = title;
+    this.list.items = this.list.items
+      .filter(todo => todo.id !== this.id);
   }
 
 }

@@ -1,80 +1,30 @@
 import React, { Component } from 'react';
-import { model } from 'mota';
-import * as models from '../models';
+import { model, binding } from 'mota';
+import { todoList } from '../models';
 
 @model
+@binding
 export default class TodoItem extends Component {
 
-  editText = '';
-
-  get list() {
-    return this.props.list;
-  }
-
-  toggle = () => {
-    this.model.toggle();
-  }
-
-  edit = () => {
-    this.list.todoBeingEdited = this.model;
-    this.editText = this.model.title;
-  };
-
-  handleChange = (e) => {
-    this.editText = e.target.value;
-  }
-
-  handleSubmit = () => {
-    const val = this.editText.trim();
-    if (val) {
-      this.model.setTitle(val);
-      this.editText = val;
-    } else {
-      this.model.delete();
-    }
-    this.list.todoBeingEdited = null;
-  }
-
-  handleKeyDown = (e) => {
-    // ESC键码 27
-    // 回车键键码 13
-    const policy = {
-      '13': this.handleSubmit,
-      '27': () => {
-        this.editText = this.model.title;
-        this.list.todoBeingEdited = null;
-      }
-    };
-    if (policy[e.keyCode]) {
-      policy[e.keyCode]();
-    }
+  onEditKeyDown = event => {
+    if (event.keyCode !== 13) return;
+    this.model.exitEditing();
   }
 
   render() {
-    const isEdit = this.list.todoBeingEdited === this.model;
-    const cls = [
-      this.model.completed ? 'completed' : '',
-      isEdit ? 'editing' : ''
+    const { title, completed, editing } = this.model;
+    const classNames = [
+      completed ? 'completed' : '', editing ? 'editing' : ''
     ].join(' ');
-    return <li className={cls}>
+    return <li className={classNames}>
       <div className="view">
-        <input
-          className="toggle"
-          type="checkbox"
-          checked={this.model.completed}
-          onChange={this.toggle} />
-        <label onDoubleClick={this.edit}>
-          {this.model.title}
-        </label>
+        <input className="toggle" type="checkbox" data-bind="completed" />
+        <label onDoubleClick={this.model.enterEditing}>{title}</label>
         <button className="destroy" onClick={this.model.delete} />
       </div>
-      <input
-        className="edit"
-        value={this.editText}
-        onBlur={this.handleSubmit}
-        onChange={this.handleChange}
-        onKeyDown={this.handleKeyDown}
-      />
+      <input className="edit" data-bind="title"
+        onBlur={this.model.exitEditing}
+        onKeyDown={this.onEditKeyDown} />
     </li>;
   }
 
