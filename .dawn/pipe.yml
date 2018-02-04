@@ -18,6 +18,9 @@ build:
     files:
       ./build/(0).ico: ./src/assets/favicon.ico
   - name: webpack
+  - name: copy
+    files:
+      ./docs/example/: ./build/**/*.*
 
 test:
   - name: lint
