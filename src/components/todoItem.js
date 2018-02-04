@@ -22,9 +22,10 @@ export default class TodoItem extends Component {
         <label onDoubleClick={this.model.enterEditing}>{title}</label>
         <button className="destroy" onClick={this.model.delete} />
       </div>
-      <input className="edit" data-bind="title"
+      {editing ? <input className="edit" data-bind="title"
+        autoFocus={editing}
         onBlur={this.model.exitEditing}
-        onKeyDown={this.onEditKeyDown} />
+        onKeyDown={this.onEditKeyDown} /> : null}
     </li>;
   }
 

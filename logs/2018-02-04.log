@@ -5349,3 +5349,264 @@ TypeError: Invalid non-string/buffer chunk
 [L][12:13:42] GET /js/common.js.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 4ms #44200
 [L][12:13:42] GET /css/index.css.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 3ms #44200
 [L][12:13:43] GET /js/index.js.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 15ms #44200
+[E][12:23:32] listen EADDRINUSE :::8001
+Error: listen EADDRINUSE :::8001
+    at Object.exports._errnoException (util.js:1024:11)
+    at exports._exceptionWithHostPort (util.js:1047:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1319:14)
+    at listenInCluster (net.js:1367:12)
+    at Server.listen (net.js:1467:7)
+    at Server.start (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_nokitjs@1.26.4@nokitjs/lib/core/server.js:863:19)
+    at Context.<anonymous> (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_dn-middleware-server@1.0.14@dn-middleware-server/lib/index.js:70:12)
+    at Context._execQueue (/Users/Houfeng/my/dev/dawn/lib/context.js:122:20)
+    at <anonymous>:null:null
+
+[E][12:23:37] listen EADDRINUSE :::8001 , exit 20 #48310
+Error: listen EADDRINUSE :::8001
+    at Object.exports._errnoException (util.js:1024:11)
+    at exports._exceptionWithHostPort (util.js:1047:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1319:14)
+    at listenInCluster (net.js:1367:12)
+    at Server.listen (net.js:1467:7)
+    at Server.start (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_nokitjs@1.26.4@nokitjs/lib/core/server.js:863:19)
+    at Context.<anonymous> (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_dn-middleware-server@1.0.14@dn-middleware-server/lib/index.js:70:12)
+    at Context._execQueue (/Users/Houfeng/my/dev/dawn/lib/context.js:122:20)
+    at <anonymous>:null:null
+
+[E][12:23:48] Invalid non-string/buffer chunk
+TypeError: Invalid non-string/buffer chunk
+    at validChunk (_stream_writable.js:238:10)
+    at Gunzip.Writable.write (_stream_writable.js:272:21)
+    at Gunzip.Writable.end (_stream_writable.js:536:10)
+    at zlibBuffer (zlib.js:100:10)
+    at zlib.js:570:14
+    at Promise.apply (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:1185:26)
+    at Promise.promise.promiseDispatch (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:808:41)
+    at /Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:1411:14
+    at runSingle (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:137:13)
+    at flush (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+
+[L][12:23:48] GET /index.html ::ffff:127.0.0.1 . text/html 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 102ms #48349
+[L][12:23:48] GET /css/index.css ::ffff:127.0.0.1 http://local.aliyun.com:8001/ text/css 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 9ms #48349
+[L][12:23:48] GET /js/common.js ::ffff:127.0.0.1 http://local.aliyun.com:8001/ application/x-javascript 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 7ms #48349
+[L][12:23:48] GET /js/index.js ::ffff:127.0.0.1 http://local.aliyun.com:8001/ application/x-javascript 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 49ms #48349
+[L][12:23:48] GET /favicon.ico ::ffff:127.0.0.1 http://local.aliyun.com:8001/ image/x-icon 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 8ms #48349
+[E][12:24:01] Invalid non-string/buffer chunk
+TypeError: Invalid non-string/buffer chunk
+    at validChunk (_stream_writable.js:238:10)
+    at Gunzip.Writable.write (_stream_writable.js:272:21)
+    at Gunzip.Writable.end (_stream_writable.js:536:10)
+    at zlibBuffer (zlib.js:100:10)
+    at zlib.js:570:14
+    at Promise.apply (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:1185:26)
+    at Promise.promise.promiseDispatch (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:808:41)
+    at /Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:1411:14
+    at runSingle (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:137:13)
+    at flush (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+
+[L][12:24:01] GET /index.html ::ffff:127.0.0.1 . text/html 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 8ms #48349
+[L][12:24:01] GET /css/index.css ::ffff:127.0.0.1 http://local.aliyun.com:8001/ text/css 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 10ms #48349
+[L][12:24:01] GET /js/common.js ::ffff:127.0.0.1 http://local.aliyun.com:8001/ application/x-javascript 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 10ms #48349
+[L][12:24:01] GET /js/index.js ::ffff:127.0.0.1 http://local.aliyun.com:8001/ application/x-javascript 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 54ms #48349
+[L][12:24:02] GET /favicon.ico ::ffff:127.0.0.1 http://local.aliyun.com:8001/ image/x-icon 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 3ms #48349
+[E][12:24:03] Invalid non-string/buffer chunk
+TypeError: Invalid non-string/buffer chunk
+    at validChunk (_stream_writable.js:238:10)
+    at Gunzip.Writable.write (_stream_writable.js:272:21)
+    at Gunzip.Writable.end (_stream_writable.js:536:10)
+    at zlibBuffer (zlib.js:100:10)
+    at zlib.js:570:14
+    at Promise.apply (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:1185:26)
+    at Promise.promise.promiseDispatch (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:808:41)
+    at /Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:1411:14
+    at runSingle (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:137:13)
+    at flush (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+
+[L][12:24:03] GET /index.html ::ffff:127.0.0.1 . text/html 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 4ms #48349
+[L][12:24:03] GET /js/common.js ::ffff:127.0.0.1 http://local.aliyun.com:8001/ application/x-javascript 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 5ms #48349
+[L][12:24:03] GET /css/index.css ::ffff:127.0.0.1 http://local.aliyun.com:8001/ text/css 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 7ms #48349
+[L][12:24:03] GET /js/index.js ::ffff:127.0.0.1 http://local.aliyun.com:8001/ application/x-javascript 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 50ms #48349
+[L][12:24:03] GET /favicon.ico ::ffff:127.0.0.1 http://local.aliyun.com:8001/ image/x-icon 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 5ms #48349
+[E][12:24:29] Invalid non-string/buffer chunk
+TypeError: Invalid non-string/buffer chunk
+    at validChunk (_stream_writable.js:238:10)
+    at Gunzip.Writable.write (_stream_writable.js:272:21)
+    at Gunzip.Writable.end (_stream_writable.js:536:10)
+    at zlibBuffer (zlib.js:100:10)
+    at zlib.js:570:14
+    at Promise.apply (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:1185:26)
+    at Promise.promise.promiseDispatch (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:808:41)
+    at /Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:1411:14
+    at runSingle (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:137:13)
+    at flush (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+
+[L][12:24:29] GET /index.html ::ffff:127.0.0.1 http://local.aliyun.com:8001/ text/html 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 7ms #48349
+[L][12:24:29] GET /css/index.css ::ffff:127.0.0.1 http://local.aliyun.com:8001/ text/css 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 7ms #48349
+[L][12:24:29] GET /js/common.js ::ffff:127.0.0.1 http://local.aliyun.com:8001/ application/x-javascript 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 4ms #48349
+[L][12:24:29] GET /js/index.js ::ffff:127.0.0.1 http://local.aliyun.com:8001/ application/x-javascript 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 46ms #48349
+[L][12:24:31] GET /css/index.css ::ffff:127.0.0.1 http://local.aliyun.com:8001/ text/css 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 3ms #48349
+[L][12:24:31] GET /js/common.js.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 5ms #48349
+[L][12:24:31] GET /css/index.css.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 3ms #48349
+[L][12:24:31] GET /js/index.js.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 20ms #48349
+[E][12:24:34] Invalid non-string/buffer chunk
+TypeError: Invalid non-string/buffer chunk
+    at validChunk (_stream_writable.js:238:10)
+    at Gunzip.Writable.write (_stream_writable.js:272:21)
+    at Gunzip.Writable.end (_stream_writable.js:536:10)
+    at zlibBuffer (zlib.js:100:10)
+    at zlib.js:570:14
+    at Promise.apply (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:1185:26)
+    at Promise.promise.promiseDispatch (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:808:41)
+    at /Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:1411:14
+    at runSingle (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:137:13)
+    at flush (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+
+[L][12:24:34] GET /index.html ::ffff:127.0.0.1 http://local.aliyun.com:8001/ text/html 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 5ms #48349
+[L][12:24:34] GET /js/common.js ::ffff:127.0.0.1 http://local.aliyun.com:8001/ application/x-javascript 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 5ms #48349
+[L][12:24:34] GET /css/index.css ::ffff:127.0.0.1 http://local.aliyun.com:8001/ text/css 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 6ms #48349
+[L][12:24:34] GET /js/index.js ::ffff:127.0.0.1 http://local.aliyun.com:8001/ application/x-javascript 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 53ms #48349
+[L][12:24:34] GET /js/common.js.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 5ms #48349
+[L][12:24:34] GET /css/index.css.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 4ms #48349
+[L][12:24:35] GET /js/index.js.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 19ms #48349
+[E][12:24:36] Invalid non-string/buffer chunk
+TypeError: Invalid non-string/buffer chunk
+    at validChunk (_stream_writable.js:238:10)
+    at Gunzip.Writable.write (_stream_writable.js:272:21)
+    at Gunzip.Writable.end (_stream_writable.js:536:10)
+    at zlibBuffer (zlib.js:100:10)
+    at zlib.js:570:14
+    at Promise.apply (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:1185:26)
+    at Promise.promise.promiseDispatch (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:808:41)
+    at /Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:1411:14
+    at runSingle (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:137:13)
+    at flush (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+
+[L][12:24:36] GET /index.html ::ffff:127.0.0.1 http://local.aliyun.com:8001/ text/html 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 7ms #48349
+[L][12:24:36] GET /js/common.js ::ffff:127.0.0.1 http://local.aliyun.com:8001/ application/x-javascript 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 3ms #48349
+[L][12:24:36] GET /css/index.css ::ffff:127.0.0.1 http://local.aliyun.com:8001/ text/css 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 5ms #48349
+[L][12:24:36] GET /js/index.js ::ffff:127.0.0.1 http://local.aliyun.com:8001/ application/x-javascript 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 49ms #48349
+[L][12:24:36] GET /js/common.js.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 5ms #48349
+[L][12:24:36] GET /css/index.css.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 5ms #48349
+[L][12:24:36] GET /js/index.js.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 12ms #48349
+[E][12:24:57] Invalid non-string/buffer chunk
+TypeError: Invalid non-string/buffer chunk
+    at validChunk (_stream_writable.js:238:10)
+    at Gunzip.Writable.write (_stream_writable.js:272:21)
+    at Gunzip.Writable.end (_stream_writable.js:536:10)
+    at zlibBuffer (zlib.js:100:10)
+    at zlib.js:570:14
+    at Promise.apply (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:1185:26)
+    at Promise.promise.promiseDispatch (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:808:41)
+    at /Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:1411:14
+    at runSingle (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:137:13)
+    at flush (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+
+[L][12:24:57] GET /index.html ::ffff:127.0.0.1 http://local.aliyun.com:8001/ text/html 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 9ms #48349
+[L][12:24:57] GET /css/index.css ::ffff:127.0.0.1 http://local.aliyun.com:8001/ text/css 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 9ms #48349
+[L][12:24:57] GET /js/common.js ::ffff:127.0.0.1 http://local.aliyun.com:8001/ application/x-javascript 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 8ms #48349
+[L][12:24:58] GET /js/index.js ::ffff:127.0.0.1 http://local.aliyun.com:8001/ application/x-javascript 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 62ms #48349
+[L][12:24:58] GET /js/common.js.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 2ms #48349
+[L][12:24:58] GET /css/index.css.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 2ms #48349
+[L][12:24:58] GET /js/index.js.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 20ms #48349
+[E][12:24:59] Invalid non-string/buffer chunk
+TypeError: Invalid non-string/buffer chunk
+    at validChunk (_stream_writable.js:238:10)
+    at Gunzip.Writable.write (_stream_writable.js:272:21)
+    at Gunzip.Writable.end (_stream_writable.js:536:10)
+    at zlibBuffer (zlib.js:100:10)
+    at zlib.js:570:14
+    at Promise.apply (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:1185:26)
+    at Promise.promise.promiseDispatch (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:808:41)
+    at /Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:1411:14
+    at runSingle (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:137:13)
+    at flush (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+
+[L][12:24:59] GET /index.html ::ffff:127.0.0.1 http://local.aliyun.com:8001/ text/html 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 5ms #48349
+[L][12:24:59] GET /css/index.css ::ffff:127.0.0.1 http://local.aliyun.com:8001/ text/css 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 4ms #48349
+[L][12:24:59] GET /js/common.js ::ffff:127.0.0.1 http://local.aliyun.com:8001/ application/x-javascript 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 4ms #48349
+[L][12:24:59] GET /js/index.js ::ffff:127.0.0.1 http://local.aliyun.com:8001/ application/x-javascript 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 47ms #48349
+[L][12:24:59] GET /js/common.js.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 3ms #48349
+[L][12:24:59] GET /css/index.css.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 2ms #48349
+[L][12:25:00] GET /js/index.js.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 16ms #48349
+[E][12:25:01] Invalid non-string/buffer chunk
+TypeError: Invalid non-string/buffer chunk
+    at validChunk (_stream_writable.js:238:10)
+    at Gunzip.Writable.write (_stream_writable.js:272:21)
+    at Gunzip.Writable.end (_stream_writable.js:536:10)
+    at zlibBuffer (zlib.js:100:10)
+    at zlib.js:570:14
+    at Promise.apply (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:1185:26)
+    at Promise.promise.promiseDispatch (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:808:41)
+    at /Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:1411:14
+    at runSingle (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:137:13)
+    at flush (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+
+[L][12:25:01] GET /index.html ::ffff:127.0.0.1 http://local.aliyun.com:8001/ text/html 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 5ms #48349
+[L][12:25:01] GET /js/common.js ::ffff:127.0.0.1 http://local.aliyun.com:8001/ application/x-javascript 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 4ms #48349
+[L][12:25:01] GET /css/index.css ::ffff:127.0.0.1 http://local.aliyun.com:8001/ text/css 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 5ms #48349
+[L][12:25:01] GET /js/index.js ::ffff:127.0.0.1 http://local.aliyun.com:8001/ application/x-javascript 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 50ms #48349
+[L][12:25:01] GET /js/common.js.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 2ms #48349
+[L][12:25:01] GET /css/index.css.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 2ms #48349
+[L][12:25:01] GET /js/index.js.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 30ms #48349
+[E][12:25:42] Invalid non-string/buffer chunk
+TypeError: Invalid non-string/buffer chunk
+    at validChunk (_stream_writable.js:238:10)
+    at Gunzip.Writable.write (_stream_writable.js:272:21)
+    at Gunzip.Writable.end (_stream_writable.js:536:10)
+    at zlibBuffer (zlib.js:100:10)
+    at zlib.js:570:14
+    at Promise.apply (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:1185:26)
+    at Promise.promise.promiseDispatch (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:808:41)
+    at /Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:1411:14
+    at runSingle (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:137:13)
+    at flush (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+
+[L][12:25:42] GET /index.html ::ffff:127.0.0.1 http://local.aliyun.com:8001/ text/html 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 6ms #48349
+[L][12:25:42] GET /css/index.css ::ffff:127.0.0.1 http://local.aliyun.com:8001/ text/css 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 5ms #48349
+[L][12:25:42] GET /js/common.js ::ffff:127.0.0.1 http://local.aliyun.com:8001/ application/x-javascript 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 5ms #48349
+[L][12:25:42] GET /js/index.js ::ffff:127.0.0.1 http://local.aliyun.com:8001/ application/x-javascript 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 49ms #48349
+[L][12:25:42] GET /js/common.js.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 1ms #48349
+[L][12:25:42] GET /css/index.css.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 4ms #48349
+[L][12:25:42] GET /js/index.js.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 19ms #48349
+[E][12:25:44] Invalid non-string/buffer chunk
+TypeError: Invalid non-string/buffer chunk
+    at validChunk (_stream_writable.js:238:10)
+    at Gunzip.Writable.write (_stream_writable.js:272:21)
+    at Gunzip.Writable.end (_stream_writable.js:536:10)
+    at zlibBuffer (zlib.js:100:10)
+    at zlib.js:570:14
+    at Promise.apply (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:1185:26)
+    at Promise.promise.promiseDispatch (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:808:41)
+    at /Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:1411:14
+    at runSingle (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:137:13)
+    at flush (/Users/Houfeng/my/dev/dn-template-react-mota/node_modules/_q@1.5.1@q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+
+[L][12:25:44] GET /index.html ::ffff:127.0.0.1 http://local.aliyun.com:8001/ text/html 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 6ms #48349
+[L][12:25:44] GET /js/common.js ::ffff:127.0.0.1 http://local.aliyun.com:8001/ application/x-javascript 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 3ms #48349
+[L][12:25:44] GET /css/index.css ::ffff:127.0.0.1 http://local.aliyun.com:8001/ text/css 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 7ms #48349
+[L][12:25:44] GET /js/index.js ::ffff:127.0.0.1 http://local.aliyun.com:8001/ application/x-javascript 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 48ms #48349
+[L][12:25:44] GET /js/common.js.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 5ms #48349
+[L][12:25:44] GET /css/index.css.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 3ms #48349
+[L][12:25:44] GET /js/index.js.map ::ffff:127.0.0.1 . application/octet-stream 200 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36" 15ms #48349
