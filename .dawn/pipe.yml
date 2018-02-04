@@ -18,6 +18,7 @@ build:
     files:
       ./build/(0).ico: ./src/assets/favicon.ico
   - name: webpack
+    external: false
   - name: copy
     files:
       ./docs/example/: ./build/**/*.*
