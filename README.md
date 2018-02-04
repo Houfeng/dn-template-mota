@@ -1,8 +1,6 @@
-# dn-template-react-mobx
+# dn-template-mota
 
-这是一个应用了 Dawn 脚手架的 React & MobX 项目模板。关于模板，请看文档[介绍](https://alibaba.github.io/dawn/docs/#!/zh/guide/template)。
-
-默认需要安装 react/react-dom/mobx/mobx-react，单元测试等基础设施都已配置完成。
+这是一个基于 mota & react 编写的一个 todo 示例应用
 
 ## 使用
 
@@ -10,8 +8,8 @@
 
 ### 初始化
 ```
-mkdir dn-react-mobx-demo && cd dn-react-mobx-demo
-dn init -t react-mobx
+mkdir your-path && cd your-path
+dn init -t mota
 ```
 
 通过如上命令便可以完成项目的初始化
