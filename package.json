@@ -1,6 +1,6 @@
 {
   "name": "dn-template-mota",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "",
   "main": "./lib/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "mota": "^0.4.6",
+    "mota": "^0.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "todomvc-app-css": "^2.1.0",
