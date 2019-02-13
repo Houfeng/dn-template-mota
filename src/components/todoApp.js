@@ -15,10 +15,6 @@ class TodoApp extends Component {
     }
   };
 
-  componentDidMount() {
-    //for (let i = 0; i < 200; i++) this.model.addTodo('test' + i);
-  }
-
   renderHeader() {
     return <header className="header">
       <h1>todos</h1><input
